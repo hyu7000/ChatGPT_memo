@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Scroll Button Extension",
+  "version": "1.0",
+  "description": "A simple Chrome extension that adds a scroll button",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://chat.openai.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+  
+}
